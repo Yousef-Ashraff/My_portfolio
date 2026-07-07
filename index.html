@@ -434,6 +434,7 @@ body{
   transition:all .18s;
 }
 .badge-public:hover{background:#d1fae5;border-color:#6ee7b7;color:#065f46}
+.badge-competition{background:#fef3c7;color:var(--amber);border:1px solid #fde68a}
 
 .proj-title{
   font-weight:700;font-size:1.02rem;
@@ -509,6 +510,42 @@ body{
 .cert-lvl{font-family:var(--fm);font-size:.57rem;color:var(--txt3);letter-spacing:.1em;text-transform:uppercase;margin-bottom:.18rem}
 .cert-name{font-weight:700;font-size:.86rem;color:var(--txt);line-height:1.33;margin-bottom:.18rem}
 .cert-issuer{font-size:.74rem;color:var(--amber);font-weight:600}
+
+/* ═══════════════════════════════
+   ACHIEVEMENTS
+═══════════════════════════════ */
+.ach-grid{display:flex;flex-direction:column;gap:1.1rem}
+.ach{
+  background:var(--card-bg);border:1px solid var(--border);
+  border-radius:12px;padding:1.5rem 1.75rem;
+  display:block;text-decoration:none;cursor:pointer;
+  transition:all .28s var(--ease);
+}
+.ach:hover{
+  border-color:rgba(255,153,0,0.28);
+  box-shadow:0 4px 22px rgba(255,153,0,0.08);
+  transform:translateY(-2px);
+}
+.ach-title{font-weight:700;font-size:1.02rem;color:var(--txt);margin-bottom:.3rem}
+.ach-issuer{font-size:.78rem;color:var(--amber);font-weight:600;margin-bottom:.9rem}
+.ach-desc{font-size:.878rem;color:var(--txt2);line-height:1.78;margin-bottom:1rem}
+.ach-desc strong{color:var(--txt);font-weight:600}
+.ach-metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:.6rem;margin-bottom:1rem}
+.am{background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:.55rem .7rem}
+.am-val{
+  font-family:var(--fb);font-size:1rem;font-weight:700;
+  color:var(--blue);letter-spacing:-.03em;line-height:1;
+  margin-bottom:.12rem;
+}
+.am-lbl{font-size:.67rem;color:var(--txt3);line-height:1.3}
+.ach-link{
+  display:inline-flex;align-items:center;gap:.4rem;
+  font-family:var(--fm);font-size:.68rem;color:var(--blue);
+  text-decoration:none;border:1px solid var(--blue-mid);
+  background:var(--blue-dim);padding:.25rem .65rem;border-radius:5px;
+  transition:background .18s;
+}
+.ach:hover .ach-link{background:rgba(26,86,219,0.13)}
 
 /* ═══════════════════════════════
    EDUCATION
@@ -662,6 +699,7 @@ body{
       <a href="#skills"         onclick="closeSidebar()">Skills</a>
       <a href="#projects"       onclick="closeSidebar()">Projects</a>
       <a href="#certifications" onclick="closeSidebar()">Certifications</a>
+      <a href="#achievements"   onclick="closeSidebar()">Achievements</a>
       <a href="#education"      onclick="closeSidebar()">Education</a>
     </nav>
 
@@ -1106,6 +1144,55 @@ body{
           </div>
         </div>
 
+        <!-- Project 7: Clash of Codes - Historical RAG Chatbot -->
+        <div class="proj rv" style="transition-delay:.40s">
+          <div class="proj-bar"></div>
+          <div class="proj-inner">
+            <div class="proj-header">
+              <div class="proj-num">Project 07</div>
+              <div class="proj-badges">
+                <span class="proj-badge badge-competition">Competition Project</span>
+                <span class="proj-badge badge-ai">RAG</span>
+                <span class="proj-badge badge-ai">NLP</span>
+              </div>
+            </div>
+            <div class="proj-title">Clash of Codes – Multilingual Historical RAG Chatbot</div>
+            <p class="proj-desc">
+              Built in 2026 under competition conditions for <strong>Clash of Codes</strong>, an AI hackathon
+              hosted by the Higher Technical Institute (HTI), competing on the <strong>NLP track</strong>. Built a
+              <strong>RAG-based chatbot</strong> that answers questions grounded in historical data, retrieving
+              relevant passages before generating responses to keep answers factually anchored. The assistant
+              was made <strong>trilingual</strong>, responding fluently in
+              <strong>Arabic, English, and Franco-Arabic</strong> to match how the judges and users actually
+              type. The project's source was lost after the competition; the certificate is the surviving
+              record of the build.
+            </p>
+            <div class="proj-metrics">
+              <div class="pm">
+                <div class="pm-val">3</div>
+                <div class="pm-lbl">Languages supported</div>
+              </div>
+              <div class="pm">
+                <div class="pm-val">RAG</div>
+                <div class="pm-lbl">Retrieval-grounded answers</div>
+              </div>
+              <div class="pm">
+                <div class="pm-val">1st</div>
+                <div class="pm-lbl">NLP track</div>
+              </div>
+            </div>
+            <div class="proj-tech">
+              <span class="pt">RAG</span>
+              <span class="pt">NLP</span>
+              <span class="pt">Arabic NLP</span>
+            </div>
+            <a href="ClashOfCodes.jpg" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:.4rem;margin-top:1rem;font-family:var(--fm);font-size:.68rem;color:var(--blue);text-decoration:none;border:1px solid var(--blue-mid);background:var(--blue-dim);padding:.25rem .65rem;border-radius:5px;transition:all .18s;" onmouseover="this.style.background='rgba(26,86,219,0.13)'" onmouseout="this.style.background='var(--blue-dim)'">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+              View Certificate
+            </a>
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -1142,25 +1229,111 @@ body{
           </div>
         </a>
 
+        <a href="ClashOfCodes.jpg" target="_blank" rel="noopener" class="cert">
+          <div class="cert-img">
+            <img src="ClashOfCodes.jpg" alt="Clash of Codes certificate">
+          </div>
+          <div>
+            <div class="cert-lvl">Competition — NLP Track</div>
+            <div class="cert-name">Clash of Codes</div>
+            <div class="cert-issuer">Higher Technical Institute (HTI)</div>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- ── Achievements ── -->
+    <section class="sec" id="achievements" aria-label="Achievements">
+      <div class="sec-lbl rv">06 — Achievements</div>
+
+      <div class="ach-grid rv" style="transition-delay:.05s">
+
+        <a href="ClashOfCodes.jpg" target="_blank" rel="noopener" class="ach">
+          <div class="ach-header">
+            <div class="ach-title">Clash of Codes — 1st Place, NLP Track</div>
+            <div class="ach-issuer">AI hackathon, Higher Technical Institute (HTI) · 2026</div>
+          </div>
+          <p class="ach-desc">
+            Competed on the <strong>NLP track</strong>, building a multilingual RAG chatbot over historical
+            data under competition conditions. The team placed <strong>1st</strong> on the track, judged
+            against the other NLP-track teams at the event.
+          </p>
+          <div class="ach-metrics">
+            <div class="am">
+              <div class="am-val">1st</div>
+              <div class="am-lbl">Place, NLP track</div>
+            </div>
+            <div class="am">
+              <div class="am-val">3</div>
+              <div class="am-lbl">Languages supported</div>
+            </div>
+            <div class="am">
+              <div class="am-val">RAG</div>
+              <div class="am-lbl">Historical-data chatbot</div>
+            </div>
+          </div>
+          <span class="ach-link">
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+            View Certificate
+          </span>
+        </a>
+
+        <a href="Ecpc_photo.jpg" target="_blank" rel="noopener" class="ach">
+          <div class="ach-header">
+            <div class="ach-title">ECPC — Egyptian Collegiate Programming Contest</div>
+            <div class="ach-issuer">Qualifying round for ACPC, under ICPC rules</div>
+          </div>
+          <p class="ach-desc">
+            Competed in a 3-person team through the qualification round, solving <strong>4 problems</strong>
+            to advance to the ECPC finals — the <strong>only team from our university</strong> to qualify.
+            Reached the finalist stage without placing among the winners.
+          </p>
+          <div class="ach-metrics">
+            <div class="am">
+              <div class="am-val">1 / Univ.</div>
+              <div class="am-lbl">Only qualifying team</div>
+            </div>
+            <div class="am">
+              <div class="am-val">4</div>
+              <div class="am-lbl">Problems solved</div>
+            </div>
+            <div class="am">
+              <div class="am-val">Finalist</div>
+              <div class="am-lbl">Result at ECPC finals</div>
+            </div>
+          </div>
+          <span class="ach-link">
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14M4 8h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+            View Team Photo
+          </span>
+        </a>
+
       </div>
     </section>
 
     <!-- ── Education ── -->
     <section class="sec" id="education" aria-label="Education">
-      <div class="sec-lbl rv">06 — Education</div>
+      <div class="sec-lbl rv">07 — Education</div>
 
       <div class="edu rv" style="transition-delay:.05s">
         <div>
           <div class="edu-deg">B.Sc. Computer Science — AI &amp; Machine Learning</div>
           <div class="edu-school">Benha National University</div>
-          <div class="edu-gpa">
-            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
-            GPA: 3.76 / 4.0
+          <div style="display:flex;flex-wrap:wrap;gap:.5rem">
+            <div class="edu-gpa">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+              GPA: 3.76 / 4.0
+            </div>
+            <div class="edu-gpa">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M12 15l-8-4.5V6L12 1.5 20 6v4.5L12 15z"/><path d="M4 10.5V17c0 1.5 3.5 3 8 3s8-1.5 8-3v-6.5"/></svg>
+              Rank 4 — AI Major
+            </div>
           </div>
         </div>
         <div class="edu-yr">
           2022 – 2026
-          <small>In Progress</small>
+          <small>Graduated</small>
         </div>
       </div>
 

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<title>Youssef Ashraf — CV</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet"/>
+<style>
+  @page{ size:letter; margin:0.4in 0.6in; }
+  *{ box-sizing:border-box; }
+  body{
+    font-family:'Lato', Calibri, Arial, sans-serif;
+    color:#1a1a1a; font-size:9.3pt; line-height:1.22;
+  }
+  .name{ text-align:center; font-size:21pt; font-weight:900; color:#1a56db; letter-spacing:.2px; }
+  .contact{ text-align:center; font-size:9pt; color:#444; margin-top:2px; margin-bottom:9px; }
+  .contact a{ color:#444; text-decoration:none; }
+  h2{
+    font-size:10.5pt; font-weight:700; color:#1a56db;
+    text-transform:uppercase; letter-spacing:.3px;
+    border-bottom:1.4px solid #1a56db;
+    padding-bottom:1px; margin:8px 0 4px;
+  }
+  h2:first-of-type{ margin-top:0; }
+  .summary{ margin-bottom:1px; }
+
+  .edu-line1{ font-weight:700; }
+  .edu-line2{ margin-top:1px; }
+  .edu-line3{ margin-top:1px; color:#333; }
+  .coursework{ margin-top:2px; }
+  .coursework b{ font-weight:700; }
+
+  .entry{ margin-bottom:4px; }
+  .entry-head{ display:flex; justify-content:space-between; align-items:baseline; }
+  .entry-title{ font-weight:700; }
+  .entry-year{ font-weight:700; white-space:nowrap; margin-left:8px; }
+  .entry-org{ font-style:italic; color:#333; margin-top:0px; }
+  .pill{
+    display:inline-block; font-size:7.6pt; color:#555;
+    background:#eeeeee; border-radius:3px;
+    padding:0.5px 7px; margin-top:2px; margin-bottom:1px;
+  }
+  ul{ margin:2px 0 0 16px; padding:0; }
+  li{ margin-bottom:0.5px; }
+  .stack{ margin-top:1px; }
+  .stack b{ font-weight:700; }
+
+  .cert-list, .skills{ margin-top:1px; }
+  .cert-list ul{ margin-top:3px; }
+  .skill-row{ margin-top:2px; }
+  .skill-row b{ font-weight:700; }
+
+  .doclink{ color:inherit; text-decoration:none; }
+</style>
+</head>
+<body>
+
+  <div class="name">Youssef Ashraf</div>
+  <div class="contact">LinkedIn | <a href="https://github.com/Yousef-Ashraff" target="_blank">GitHub</a> | yousefashraf970@gmail.com | (+20) 01154202976</div>
+
+  <h2>Summary</h2>
+  <div class="summary">
+    Computer science professional passionate about deep learning and machine learning, with expertise in engineering
+    AI-powered solutions. Experienced in building conversational AI systems, NLP pipelines, and deep learning models.
+    Eager to contribute to innovative data-driven projects and continue deepening expertise in AI and data analysis.
+  </div>
+
+  <h2>Education</h2>
+  <div class="edu-line1">BNU (Benha National University) — Cairo, Egypt</div>
+  <div class="edu-line2">B.Sc. in Computer Science, Major: Artificial Intelligence | Oct 2022 – July 2026 | GPA: 3.76</div>
+  <div class="edu-line3">Graduated: July 2026 | Class Rank: 4th, AI Major</div>
+  <div class="coursework"><b>Relevant Coursework:</b> Machine Learning · Deep Learning · Natural Language Processing ·
+    Neural Networks · Data Structures &amp; Algorithms · Database Programming · Data Engineering &amp; Visualization ·
+    Software Engineering · Statistics · Computer Networks</div>
+
+  <h2>Work Experience</h2>
+
+  <div class="entry">
+    <div class="entry-head"><span class="entry-title">Cloud Services Trainee</span><span class="entry-year">2025</span></div>
+    <div class="entry-org">National Telecommunication Institute (NTI)</div>
+    <ul>
+      <li>Hands-on with 8 core AWS services: EC2, S3, IAM, VPC, Lambda, RDS, CloudWatch.</li>
+      <li>Designed secure, scalable architectures aligned with Solutions Architect best practices.</li>
+      <li>Reduced projected cloud costs by 20% through optimized IAM policies and networking.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head"><span class="entry-title">Computer Vision Intern</span><span class="entry-year">2025</span></div>
+    <div class="entry-org">National Academy of IT for Persons with Disabilities (NAID) — New Capital · On-Site</div>
+    <ul>
+      <li>Contributed to a computer vision project for dyslexia detection; processed and analyzed 500+ text samples to
+        improve reading assistance accuracy.</li>
+      <li>Collaborated with a team of 6 researchers; contributed to 2 technical presentations on AI applications in
+        accessibility, achieving 85% model accuracy in preliminary testing.</li>
+    </ul>
+  </div>
+
+  <h2>Projects</h2>
+
+  <div class="entry">
+    <div class="entry-head"><span class="entry-title">BNUConnect – AI-Powered Academic Advisor Chatbot — Graduation Project</span><span class="entry-year">2026</span></div>
+    <div class="pill">Private Repo</div>
+    <ul>
+      <li>Engineered a production-grade AI academic advisor chatbot for Benha National University, deployed as a REST
+        API (FastAPI + Uvicorn) integrated into the BNUConnect mobile app, serving students across 3 program tracks
+        (AI &amp; ML, Software Development, Data Science).</li>
+      <li>Built a stateful LangGraph ReAct agent with a custom Judging Loop, orchestrating 12 LangChain tools across
+        Neo4j knowledge graph (course catalog, prerequisites, program tracks), Supabase (student profiles, chat
+        history), and a Pinecone RAG pipeline for university bylaw Q&amp;A — achieving accurate multi-hop reasoning
+        over the full academic domain.</li>
+      <li>Designed a 5-step NLP preprocessing pipeline (reference resolution, entity extraction, fuzzy course name
+        mapping, track normalization, query rewriting) that resolves abbreviations and pronouns before the agent
+        runs, eliminating wasted tool calls and handling ambiguous queries via interactive disambiguation sessions.</li>
+      <li>Implemented a RAG pipeline using HuggingFace multilingual-e5-large embeddings and Pinecone vector store
+        (bnu-bylaws index) for bylaw/regulation Q&amp;A, and built an interactive multi-turn course planner bridged
+        from a CLI function to the chatbot via a thread I/O bridge with 90-second timeout handling.</li>
+    </ul>
+    <div class="stack"><b>Stack:</b> LangGraph, LangChain, FastAPI, Groq, Neo4j Aura, Supabase (PostgreSQL), Pinecone, HuggingFace, Python, Docker.</div>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head"><span class="entry-title">BNU Admission Chatbot – Multilingual RAG Assistant</span><span class="entry-year">2026</span></div>
+    <div class="pill">Private Repo</div>
+    <ul>
+      <li>Built a multilingual RAG chatbot answering admission queries in Arabic (MSA &amp; Egyptian), Franco-Arabic,
+        and English, using hybrid dense (Pinecone) + sparse (BM25) retrieval with reciprocal rank fusion, plus an
+        intent router that skips LLM calls for greetings, FAQs, and out-of-scope messages.</li>
+      <li>Automated knowledge-base upkeep with a Google Drive sync job detecting new/modified/deleted source PDFs
+        every 10 minutes, shipped as a FastAPI service with an RTL/LTR-aware frontend and Docker deployment.</li>
+    </ul>
+    <div class="stack"><b>Stack:</b> FastAPI, Groq, Pinecone, BM25, Cohere, HuggingFace, Google Drive API, Docker.</div>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head"><span class="entry-title">Clash of Codes – Multilingual Historical RAG Chatbot — 1st Place, NLP Track</span><span class="entry-year">2026</span></div>
+    <div class="pill">Competition Project</div>
+    <ul>
+      <li>Built a RAG-based chatbot under competition conditions for Clash of Codes, an AI hackathon hosted by the
+        Higher Technical Institute (HTI) on the NLP track, retrieving relevant historical-data passages before
+        generating responses to keep answers factually grounded.</li>
+      <li>Made the assistant trilingual — responding fluently in Arabic, English, and Franco-Arabic — and placed 1st
+        among NLP-track teams at the competition.</li>
+    </ul>
+    <div class="stack"><b>Stack:</b> RAG, NLP, Arabic NLP.</div>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head"><span class="entry-title">Auto Correction System</span><span class="entry-year">2025</span></div>
+    <div class="pill">Private Repo</div>
+    <ul>
+      <li>Designed and implemented a natural language processing system to automatically correct spelling and grammar
+        errors using Transformer models and custom tokenization strategies.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head"><span class="entry-title">Video Action Recognition on UCF50</span><span class="entry-year">2025</span></div>
+    <div class="pill">Public Repo</div>
+    <ul>
+      <li>Trained a spatio-temporal TensorFlow/Keras classifier to recognize 50 human action categories from the
+        UCF50 dataset, sampling, resizing, and normalizing 20 frames per clip for model input.</li>
+      <li>Deployed an interactive Gradio app that accepts uploaded videos, transcodes them with FFmpeg, and returns
+        top-3 predicted actions with confidence scores.</li>
+    </ul>
+    <div class="stack"><b>Stack:</b> TensorFlow, Keras, OpenCV, Gradio, FFmpeg, NumPy.</div>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head"><span class="entry-title">Twitter Sentiment Analysis with Apache Spark &amp; Docker</span><span class="entry-year">2025</span></div>
+    <div class="pill">Public Repo</div>
+    <ul>
+      <li>Built a distributed sentiment analysis pipeline on a 3-node (1 master + 2 workers) Dockerized Apache Spark
+        cluster, extracting 20,000 TF-IDF features and training a Logistic Regression classifier on ~75K tweets to
+        label sentiment as Positive, Negative, Neutral, or Irrelevant (91.7% training / 80.2% validation accuracy).</li>
+      <li>Served the model through a Flask web app with a REST endpoint for real-time predictions and per-class
+        confidence scores.</li>
+    </ul>
+    <div class="stack"><b>Stack:</b> Apache Spark, PySpark MLlib, Flask, Docker Compose, Logistic Regression, TF-IDF.</div>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head"><span class="entry-title">Face Recognition – Identity-Verified Account Access</span><span class="entry-year">2024</span></div>
+    <div class="pill">Public Repo</div>
+    <ul>
+      <li>Built a facial-recognition identity verification system using FaceNet (128-d embeddings) and MTCNN for face
+        detection, matching users via L2 distance against 30+ stored identities.</li>
+      <li>Wrapped the pipeline in a Gradio app simulating a secure bank-account flow (face login, account creation,
+        deposit/withdraw) and deployed it live on HuggingFace Spaces.</li>
+    </ul>
+    <div class="stack"><b>Stack:</b> TensorFlow, FaceNet, MTCNN, Gradio, NumPy.</div>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head"><span class="entry-title">Animal Segmentation Model with U-Net &amp; TensorFlow</span><span class="entry-year">2024</span></div>
+    <div class="pill">Public Repo</div>
+    <ul>
+      <li>Built an animal segmentation model using the U-Net architecture with TensorFlow for pixel-wise
+        classification. Involved preprocessing annotated datasets and evaluating performance with IoU and Dice
+        coefficient metrics.</li>
+    </ul>
+  </div>
+
+  <h2>Achievements</h2>
+  <ul>
+    <li><b><a class="doclink" href="https://drive.google.com/file/d/1sKn9NRPqOBysrKsiEyJhpYB9XrfBNKHb/view?usp=drive_link" target="_blank">Clash of Codes</a> (HTI AI Hackathon) — 1st Place, NLP Track:</b> Placed 1st on the NLP track for a
+      multilingual (Arabic, English, Franco-Arabic) RAG chatbot built over historical data under competition
+      conditions.</li>
+    <li><b><a class="doclink" href="https://drive.google.com/file/d/1UBdmt3mClxxT4_z0nKGRQE9aitRbY_Z0/view?usp=drive_link" target="_blank">ECPC</a> (Egyptian Collegiate Programming Contest) — Finalist:</b> Sole qualifying team from Benha National
+      University; solved 4 problems as a 3-person team to advance from the qualification round to the ECPC finals
+      (ACPC qualifier, under ICPC rules).</li>
+  </ul>
+
+  <h2>Certifications</h2>
+  <div class="cert-list">
+    <ul>
+      <li><a class="doclink" href="https://drive.google.com/file/d/1OPn-sJ2JMiXILL3pROj3S0DriUFoEwOn/view?usp=drive_link" target="_blank">Cloud Architect — National Telecommunication Institute (NTI)</a></li>
+      <li>Machine Learning Specialization — Andrew Ng (Coursera)</li>
+      <li>Deep Learning Specialization — Andrew Ng (Coursera)</li>
+      <li><a class="doclink" href="https://drive.google.com/file/d/1NdHA3_K-hHp-CnL2yyybCwgxAnAHXLVA/view?usp=drive_link" target="_blank">Hugging Face Agents Course</a></li>
+      <li><a class="doclink" href="https://drive.google.com/file/d/1sKn9NRPqOBysrKsiEyJhpYB9XrfBNKHb/view?usp=drive_link" target="_blank">Clash of Codes — 1st Place, NLP Track (Higher Technical Institute)</a></li>
+    </ul>
+  </div>
+
+  <h2>Technical Skills</h2>
+  <div class="skills">
+    <div class="skill-row"><b>Programming Languages:</b> Python, C++</div>
+    <div class="skill-row"><b>AI / ML Frameworks:</b> PyTorch, TensorFlow, Hugging Face Transformers, Scikit-learn</div>
+    <div class="skill-row"><b>LLM / Agent Frameworks:</b> LangChain, LangGraph, Smolagents, LlamaIndex, LangFuse</div>
+    <div class="skill-row"><b>Databases &amp; Vector Stores:</b> Neo4j, Supabase (PostgreSQL), Pinecone</div>
+    <div class="skill-row"><b>APIs &amp; Tools:</b> FastAPI, Groq, Gradio, Weights &amp; Biases, GitHub</div>
+    <div class="skill-row"><b>Deep Learning Techniques:</b> CNNs, RNNs, LSTMs, Transformers, Transfer Learning, LLMs</div>
+    <div class="skill-row"><b>Data Science Skills:</b> Statistical Analysis, Data Visualization, Feature Engineering</div>
+  </div>
+
+</body>
+</html>
