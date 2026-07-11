@@ -31,15 +31,22 @@
   .coursework{ margin-top:2px; }
   .coursework b{ font-weight:700; }
 
-  .entry{ margin-bottom:4px; }
+  .entry{ margin-bottom:3px; break-inside:avoid; page-break-inside:avoid; }
   .entry-head{ display:flex; justify-content:space-between; align-items:baseline; }
   .entry-title{ font-weight:700; }
   .entry-year{ font-weight:700; white-space:nowrap; margin-left:8px; }
   .entry-org{ font-style:italic; color:#333; margin-top:0px; }
   .pill{
-    display:inline-block; font-size:7.6pt; color:#555;
-    background:#eeeeee; border-radius:3px;
-    padding:0.5px 7px; margin-top:2px; margin-bottom:1px;
+    display:inline-block; font-size:7.6pt;
+    border-radius:3px; border:0.75px solid transparent;
+    padding:0.5px 7px; margin-top:1px; margin-bottom:0.5px;
+    -webkit-print-color-adjust:exact; print-color-adjust:exact;
+  }
+  .pill-private{ background:#f1f0ec; color:#5c6370; border-color:#d5d4cd; }
+  .pill-competition{ background:#fef3c7; color:#b45309; border-color:#fde68a; }
+  .pill-public{
+    background:#ecfdf5; color:#047857; border-color:#a7f3d0;
+    text-decoration:none;
   }
   ul{ margin:2px 0 0 16px; padding:0; }
   li{ margin-bottom:0.5px; }
@@ -51,13 +58,12 @@
   .skill-row{ margin-top:2px; }
   .skill-row b{ font-weight:700; }
 
-  .doclink{ color:inherit; text-decoration:none; }
 </style>
 </head>
 <body>
 
   <div class="name">Youssef Ashraf</div>
-  <div class="contact">LinkedIn | <a href="https://github.com/Yousef-Ashraff" target="_blank">GitHub</a> | yousefashraf970@gmail.com | (+20) 01154202976</div>
+  <div class="contact">LinkedIn | <a href="https://github.com/Yousef-Ashraff" target="_blank">GitHub</a> | <a href="https://my-portfolio-eight-murex-70.vercel.app" target="_blank">Portfolio</a> | yousefashraf970@gmail.com | (+20) 01154202976</div>
 
   <h2>Summary</h2>
   <div class="summary">
@@ -111,7 +117,7 @@
 
   <div class="entry">
     <div class="entry-head"><span class="entry-title">BNUConnect – AI-Powered Academic Advisor Chatbot — Graduation Project</span><span class="entry-year">2026</span></div>
-    <div class="pill">Private Repo</div>
+    <div class="pill pill-private">Private Repo</div>
     <ul>
       <li>Engineered a production-grade AI academic advisor chatbot for Benha National University, deployed as a REST
         API (FastAPI + Uvicorn) integrated into the BNUConnect mobile app, serving students across 3 program tracks
@@ -132,7 +138,7 @@
 
   <div class="entry">
     <div class="entry-head"><span class="entry-title">BNU Admission Chatbot – Multilingual RAG Assistant</span><span class="entry-year">2026</span></div>
-    <div class="pill">Private Repo</div>
+    <div class="pill pill-private">Private Repo</div>
     <ul>
       <li>Built a multilingual RAG chatbot answering admission queries in Arabic (MSA &amp; Egyptian), Franco-Arabic,
         and English, using hybrid dense (Pinecone) + sparse (BM25) retrieval with reciprocal rank fusion, plus an
@@ -145,7 +151,7 @@
 
   <div class="entry">
     <div class="entry-head"><span class="entry-title">Clash of Codes – Multilingual Historical RAG Chatbot — 1st Place, NLP Track</span><span class="entry-year">2026</span></div>
-    <div class="pill">Competition Project</div>
+    <div class="pill pill-competition">Competition Project</div>
     <ul>
       <li>Built a RAG-based chatbot under competition conditions for Clash of Codes, an AI hackathon hosted by the
         Higher Technical Institute (HTI) on the NLP track, retrieving relevant historical-data passages before
@@ -158,7 +164,7 @@
 
   <div class="entry">
     <div class="entry-head"><span class="entry-title">Auto Correction System</span><span class="entry-year">2025</span></div>
-    <div class="pill">Private Repo</div>
+    <div class="pill pill-private">Private Repo</div>
     <ul>
       <li>Designed and implemented a natural language processing system to automatically correct spelling and grammar
         errors using Transformer models and custom tokenization strategies.</li>
@@ -167,7 +173,7 @@
 
   <div class="entry">
     <div class="entry-head"><span class="entry-title">Video Action Recognition on UCF50</span><span class="entry-year">2025</span></div>
-    <div class="pill">Public Repo</div>
+    <a class="pill pill-public" href="https://github.com/Yousef-Ashraff/video-action-recognition-ucf50" target="_blank">Public Repo ↗</a>
     <ul>
       <li>Trained a spatio-temporal TensorFlow/Keras classifier to recognize 50 human action categories from the
         UCF50 dataset, sampling, resizing, and normalizing 20 frames per clip for model input.</li>
@@ -179,7 +185,7 @@
 
   <div class="entry">
     <div class="entry-head"><span class="entry-title">Twitter Sentiment Analysis with Apache Spark &amp; Docker</span><span class="entry-year">2025</span></div>
-    <div class="pill">Public Repo</div>
+    <a class="pill pill-public" href="https://github.com/Yousef-Ashraff/Twitter-Sentiment-Analysis-with-Apache-Spark-Docker" target="_blank">Public Repo ↗</a>
     <ul>
       <li>Built a distributed sentiment analysis pipeline on a 3-node (1 master + 2 workers) Dockerized Apache Spark
         cluster, extracting 20,000 TF-IDF features and training a Logistic Regression classifier on ~75K tweets to
@@ -192,7 +198,7 @@
 
   <div class="entry">
     <div class="entry-head"><span class="entry-title">Face Recognition – Identity-Verified Account Access</span><span class="entry-year">2024</span></div>
-    <div class="pill">Public Repo</div>
+    <a class="pill pill-public" href="https://github.com/Yousef-Ashraff/Face-Recognition" target="_blank">Public Repo ↗</a>
     <ul>
       <li>Built a facial-recognition identity verification system using FaceNet (128-d embeddings) and MTCNN for face
         detection, matching users via L2 distance against 30+ stored identities.</li>
@@ -204,7 +210,7 @@
 
   <div class="entry">
     <div class="entry-head"><span class="entry-title">Animal Segmentation Model with U-Net &amp; TensorFlow</span><span class="entry-year">2024</span></div>
-    <div class="pill">Public Repo</div>
+    <a class="pill pill-public" href="https://github.com/Yousef-Ashraff/an-animal-segmentation-model-with-u-net-and-tf" target="_blank">Public Repo ↗</a>
     <ul>
       <li>Built an animal segmentation model using the U-Net architecture with TensorFlow for pixel-wise
         classification. Involved preprocessing annotated datasets and evaluating performance with IoU and Dice
@@ -214,10 +220,10 @@
 
   <h2>Achievements</h2>
   <ul>
-    <li><b><a class="doclink" href="https://drive.google.com/file/d/1sKn9NRPqOBysrKsiEyJhpYB9XrfBNKHb/view?usp=drive_link" target="_blank">Clash of Codes</a> (HTI AI Hackathon) — 1st Place, NLP Track:</b> Placed 1st on the NLP track for a
+    <li><b>Clash of Codes (HTI AI Hackathon) — 1st Place, NLP Track:</b> Placed 1st on the NLP track for a
       multilingual (Arabic, English, Franco-Arabic) RAG chatbot built over historical data under competition
       conditions.</li>
-    <li><b><a class="doclink" href="https://drive.google.com/file/d/1UBdmt3mClxxT4_z0nKGRQE9aitRbY_Z0/view?usp=drive_link" target="_blank">ECPC</a> (Egyptian Collegiate Programming Contest) — Finalist:</b> Sole qualifying team from Benha National
+    <li><b>ECPC (Egyptian Collegiate Programming Contest) — Finalist:</b> Sole qualifying team from Benha National
       University; solved 4 problems as a 3-person team to advance from the qualification round to the ECPC finals
       (ACPC qualifier, under ICPC rules).</li>
   </ul>
@@ -225,12 +231,12 @@
   <h2>Certifications</h2>
   <div class="cert-list">
     <ul>
-      <li><a class="doclink" href="https://drive.google.com/file/d/1Tdqc9IsUt7hpJHd_jPq8v8pKsZt9LJ_H/view?usp=drive_link" target="_blank">Co-Head, Machine Learning Track — Google Developer Groups (GDG)</a></li>
-      <li><a class="doclink" href="https://drive.google.com/file/d/1OPn-sJ2JMiXILL3pROj3S0DriUFoEwOn/view?usp=drive_link" target="_blank">Cloud Architect — National Telecommunication Institute (NTI)</a></li>
+      <li>Co-Head, Machine Learning Track — Google Developer Groups (GDG)</li>
+      <li>Cloud Architect — National Telecommunication Institute (NTI)</li>
       <li>Machine Learning Specialization — Andrew Ng (Coursera)</li>
       <li>Deep Learning Specialization — Andrew Ng (Coursera)</li>
-      <li><a class="doclink" href="https://drive.google.com/file/d/1NdHA3_K-hHp-CnL2yyybCwgxAnAHXLVA/view?usp=drive_link" target="_blank">Hugging Face Agents Course</a></li>
-      <li><a class="doclink" href="https://drive.google.com/file/d/1sKn9NRPqOBysrKsiEyJhpYB9XrfBNKHb/view?usp=drive_link" target="_blank">Clash of Codes — 1st Place, NLP Track (Higher Technical Institute)</a></li>
+      <li>Hugging Face Agents Course</li>
+      <li>Clash of Codes — 1st Place, NLP Track (Higher Technical Institute)</li>
     </ul>
   </div>
 
