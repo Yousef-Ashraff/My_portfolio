@@ -63,7 +63,7 @@
 <body>
 
   <div class="name">Youssef Ashraf</div>
-  <div class="contact">LinkedIn | <a href="https://github.com/Yousef-Ashraff" target="_blank">GitHub</a> | <a href="https://my-portfolio-eight-murex-70.vercel.app" target="_blank">Portfolio</a> | yousefashraf970@gmail.com | (+20) 01154202976</div>
+  <div class="contact"><a href="https://www.linkedin.com/in/yousef-ashraf-90617b422" target="_blank">LinkedIn</a> | <a href="https://github.com/Yousef-Ashraff" target="_blank">GitHub</a> | <a href="https://my-portfolio-eight-murex-70.vercel.app" target="_blank">Portfolio</a> | yousefashraf970@gmail.com | (+20) 01154202976</div>
 
   <h2>Summary</h2>
   <div class="summary">
@@ -73,17 +73,15 @@
   </div>
 
   <h2>Education</h2>
-  <div class="edu-line1">BNU (Benha National University) — Cairo, Egypt</div>
-  <div class="edu-line2">B.Sc. in Computer Science, Major: Artificial Intelligence | Oct 2022 – July 2026 | GPA: 3.76</div>
-  <div class="edu-line3">Graduated: July 2026 | Class Rank: 4th, AI Major</div>
-  <div class="coursework"><b>Relevant Coursework:</b> Machine Learning · Deep Learning · Natural Language Processing ·
-    Neural Networks · Data Structures &amp; Algorithms · Database Programming · Data Engineering &amp; Visualization ·
-    Software Engineering · Statistics · Computer Networks</div>
+  <div class="entry">
+    <div class="entry-head"><span class="entry-title">B.Sc. in Computer Science – Major in AI and Machine Learning</span><span class="entry-year">2022 – 2026</span></div>
+    <div class="entry-org">Benha National University | GPA: 3.76 / 4.0 | Class Rank: 4th, AI and Machine Learning Major</div>
+  </div>
 
   <h2>Work Experience</h2>
 
   <div class="entry">
-    <div class="entry-head"><span class="entry-title">Co-Head, Machine Learning Track</span><span class="entry-year">2026</span></div>
+    <div class="entry-head"><span class="entry-title">Co-Head, Machine Learning Track</span><span class="entry-year">Feb 2026 – May 2026</span></div>
     <div class="entry-org">Google Developer Groups (GDG)</div>
     <ul>
       <li>Co-led the Machine Learning track, delivering technical sessions to students from multiple universities.</li>
@@ -93,7 +91,7 @@
   </div>
 
   <div class="entry">
-    <div class="entry-head"><span class="entry-title">Cloud Services Trainee</span><span class="entry-year">2025</span></div>
+    <div class="entry-head"><span class="entry-title">Cloud Services Trainee</span><span class="entry-year">Jun 2025 – Jul 2025</span></div>
     <div class="entry-org">National Telecommunication Institute (NTI)</div>
     <ul>
       <li>Hands-on with 8 core AWS services: EC2, S3, IAM, VPC, Lambda, RDS, CloudWatch.</li>
@@ -103,7 +101,7 @@
   </div>
 
   <div class="entry">
-    <div class="entry-head"><span class="entry-title">Computer Vision Intern</span><span class="entry-year">2025</span></div>
+    <div class="entry-head"><span class="entry-title">Computer Vision Intern</span><span class="entry-year">Jul 2025 – Sep 2025</span></div>
     <div class="entry-org">National Academy of IT for Persons with Disabilities (NAID) — New Capital · On-Site</div>
     <ul>
       <li>Contributed to a computer vision project for dyslexia detection; processed and analyzed 500+ text samples to
@@ -150,25 +148,19 @@
   </div>
 
   <div class="entry">
-    <div class="entry-head"><span class="entry-title">Clash of Codes – Multilingual Historical RAG Chatbot — 1st Place, NLP Track</span><span class="entry-year">2026</span></div>
-    <div class="pill pill-competition">Competition Project</div>
+    <div class="entry-head"><span class="entry-title">Pix2Pix – Image-to-Image Translation with Conditional GANs</span><span class="entry-year">2025</span></div>
+    <a class="pill pill-public" href="https://github.com/Yousef-Ashraff/Pix2Pix-Image-to-image-translation-with-a-conditional-GAN" target="_blank">Public Repo ↗</a>
     <ul>
-      <li>Built a RAG-based chatbot under competition conditions for Clash of Codes, an AI hackathon hosted by the
-        Higher Technical Institute (HTI) on the NLP track, retrieving relevant historical-data passages before
-        generating responses to keep answers factually grounded.</li>
-      <li>Made the assistant trilingual — responding fluently in Arabic, English, and Franco-Arabic — and placed 1st
-        among NLP-track teams at the competition.</li>
+      <li>Implemented the Pix2Pix conditional GAN framework (U-Net generator with skip connections + PatchGAN
+        discriminator) in TensorFlow/Keras to translate architectural line-drawing schematics into photorealistic
+        building facades on the 606-image CMP Facades dataset.</li>
+      <li>Trained the custom model for 600 epochs (Adam, lr 5e-5, L1 λ=500, instance normalization) on a Tesla T4
+        GPU, outperforming a pretrained PyTorch baseline across MAE (0.145 vs. 0.183), PSNR (22.34 dB vs. 12.62 dB),
+        and SSIM (0.71 vs. 0.25).</li>
+      <li>Built quantitative model-comparison tooling and an interactive Gradio web app for real-time
+        schematic-to-facade inference with public URL sharing.</li>
     </ul>
-    <div class="stack"><b>Stack:</b> RAG, NLP, Arabic NLP.</div>
-  </div>
-
-  <div class="entry">
-    <div class="entry-head"><span class="entry-title">Auto Correction System</span><span class="entry-year">2025</span></div>
-    <div class="pill pill-private">Private Repo</div>
-    <ul>
-      <li>Designed and implemented a natural language processing system to automatically correct spelling and grammar
-        errors using Transformer models and custom tokenization strategies.</li>
-    </ul>
+    <div class="stack"><b>Stack:</b> TensorFlow, Keras, PyTorch, U-Net, PatchGAN, Gradio, NumPy.</div>
   </div>
 
   <div class="entry">
@@ -196,28 +188,6 @@
     <div class="stack"><b>Stack:</b> Apache Spark, PySpark MLlib, Flask, Docker Compose, Logistic Regression, TF-IDF.</div>
   </div>
 
-  <div class="entry">
-    <div class="entry-head"><span class="entry-title">Face Recognition – Identity-Verified Account Access</span><span class="entry-year">2024</span></div>
-    <a class="pill pill-public" href="https://github.com/Yousef-Ashraff/Face-Recognition" target="_blank">Public Repo ↗</a>
-    <ul>
-      <li>Built a facial-recognition identity verification system using FaceNet (128-d embeddings) and MTCNN for face
-        detection, matching users via L2 distance against 30+ stored identities.</li>
-      <li>Wrapped the pipeline in a Gradio app simulating a secure bank-account flow (face login, account creation,
-        deposit/withdraw) and deployed it live on HuggingFace Spaces.</li>
-    </ul>
-    <div class="stack"><b>Stack:</b> TensorFlow, FaceNet, MTCNN, Gradio, NumPy.</div>
-  </div>
-
-  <div class="entry">
-    <div class="entry-head"><span class="entry-title">Animal Segmentation Model with U-Net &amp; TensorFlow</span><span class="entry-year">2024</span></div>
-    <a class="pill pill-public" href="https://github.com/Yousef-Ashraff/an-animal-segmentation-model-with-u-net-and-tf" target="_blank">Public Repo ↗</a>
-    <ul>
-      <li>Built an animal segmentation model using the U-Net architecture with TensorFlow for pixel-wise
-        classification. Involved preprocessing annotated datasets and evaluating performance with IoU and Dice
-        coefficient metrics.</li>
-    </ul>
-  </div>
-
   <h2>Achievements</h2>
   <ul>
     <li><b>Clash of Codes (HTI AI Hackathon) — 1st Place, NLP Track:</b> Placed 1st on the NLP track for a
@@ -242,13 +212,20 @@
 
   <h2>Technical Skills</h2>
   <div class="skills">
-    <div class="skill-row"><b>Programming Languages:</b> Python, C++</div>
+    <div class="skill-row"><b>Programming Languages:</b> Python (Advanced), C++ (Intermediate)</div>
     <div class="skill-row"><b>AI / ML Frameworks:</b> PyTorch, TensorFlow, Hugging Face Transformers, Scikit-learn</div>
-    <div class="skill-row"><b>LLM / Agent Frameworks:</b> LangChain, LangGraph, Smolagents, LlamaIndex, LangFuse</div>
-    <div class="skill-row"><b>Databases &amp; Vector Stores:</b> Neo4j, Supabase (PostgreSQL), Pinecone</div>
-    <div class="skill-row"><b>APIs &amp; Tools:</b> FastAPI, Groq, Gradio, Weights &amp; Biases, GitHub</div>
+    <div class="skill-row"><b>LLM &amp; Agentic AI:</b> LangChain, LangGraph, CrewAI, Smolagents, LlamaIndex, RAG, Prompt Engineering, Fine-tuning, Ollama, vLLM</div>
+    <div class="skill-row"><b>MLOps &amp; Observability:</b> LangSmith, LangFuse, Weights &amp; Biases, Groq</div>
     <div class="skill-row"><b>Deep Learning Techniques:</b> CNNs, RNNs, LSTMs, Transformers, Transfer Learning, LLMs</div>
-    <div class="skill-row"><b>Data Science Skills:</b> Statistical Analysis, Data Visualization, Feature Engineering</div>
+    <div class="skill-row"><b>Orchestration &amp; Deployment:</b> FastAPI, Gradio, Streamlit, Docker, Kubernetes (EKS), GitHub Actions, GitHub</div>
+    <div class="skill-row"><b>Databases:</b> MySQL, MongoDB, Neo4j, Supabase (PostgreSQL), Elasticsearch, Redis</div>
+    <div class="skill-row"><b>Vector Stores:</b> Pinecone, FAISS, Chroma</div>
+    <div class="skill-row"><b>Data Analysis &amp; Visualization:</b> Pandas, NumPy, Matplotlib, Seaborn, Statistical Analysis, Feature Engineering</div>
+  </div>
+
+  <h2>Languages</h2>
+  <div class="skills">
+    <div class="skill-row">Arabic – Native | English – Advanced</div>
   </div>
 
 </body>
